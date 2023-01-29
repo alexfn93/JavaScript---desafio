@@ -1,0 +1,29 @@
+<html>
+    <script>
+        /* Desafio: Criar uma função que recebe uma palavra
+        como parâmetro e retornar esta palavra invertida.*/
+
+        //1- Receber a palavra como parâmentro;
+        //2- Criar uma variável temporária para armazenar o resultado;
+        //3- Interar a palavra de trás para frente, armazenando letra por letra na variável temporária;
+        //4- Retornar a variável temporária;
+
+        //vou utilizar a palavra -> futebol
+        //futebol
+        //0123456
+        //length = 7
+        //com a inversão -> 654321
+
+
+        function ordemInversa(palavra) {
+            var palavraInvertida = "";
+            for (var i = palavra.length - 1; i >= 0; i--) {
+              palavraInvertida = palavraInvertida + palavra [i];
+            }
+            return palavraInvertida;
+        }
+
+        console.log(ordemInversa("futebol"));
+
+    </script>
+</html>
